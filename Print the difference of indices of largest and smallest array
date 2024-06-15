@@ -1,0 +1,10 @@
+a=int(input())
+arr=list(map(int,input().split()))
+print(arr.index(max(arr))-arr.index(min(arr)))
+
+Sample Input :
+5
+1 6 4 0 3
+
+Sample Output :
+-2
