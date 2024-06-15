@@ -1,0 +1,14 @@
+a=input()
+arr=list(map(str,input().split()))
+c=[]
+for i in arr:
+    if i not in c:
+        c.append(i)
+print(*c)        
+
+Sample Input :
+5
+A23 B56 B56 C79 D16
+
+Sample Output :
+A23 B56 C79 D16
