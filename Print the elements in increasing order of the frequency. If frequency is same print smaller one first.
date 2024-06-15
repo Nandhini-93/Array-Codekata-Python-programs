@@ -1,0 +1,30 @@
+n = int(input())
+arr= list(map(int,input().split()))
+
+from collections import Counter 
+
+def frequencySort(nums): 
+    cn = Counter(nums)
+    out = [] 
+    for k, v in sorted(cn.items(), key = lambda kv: (kv[1],kv[0])): 
+        out.append(v*[k])
+        o = [] 
+    for i in out: 
+        o+= i
+        
+    final = []
+    for i in o:
+        if i not in final:
+            final.append(i)
+    return final
+
+print(*frequencySort(arr))
+
+Sample Input :
+4
+1 1 3 2
+
+Sample Output :
+2 3 1
+
+
