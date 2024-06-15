@@ -1,0 +1,9 @@
+a=input()
+print(a)
+
+Sample Testcase :
+INPUT
+hello world
+
+OUTPUT
+hello world
